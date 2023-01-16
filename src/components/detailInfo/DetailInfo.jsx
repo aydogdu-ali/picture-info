@@ -3,9 +3,11 @@ import React, { useState } from 'react'
 
 
 
-const DetailInfo = ({item}) => {
+const DetailInfo = ({item, removeFoto}) => {
   const [detail ,setDetail] = useState(false)
   const { id, tags, likes, webformatURL,type, comments} = item
+
+  
  
   return (
     <div className="fotograf">
@@ -27,11 +29,11 @@ const DetailInfo = ({item}) => {
           ""
         )}
         <div className="btn-sil">
-          <button className="btn-kaldır">Kaldır</button>
+          <button className="btn-kaldır" onClick={()=>(removeFoto(id))}>Kaldır</button>
         </div>
       </section>
     </div>
   );
 }
 
-export default DetailInfo
+export default DetailInfo;

@@ -2,7 +2,7 @@ import React from 'react'
 
 import DetailInfo from "../detailInfo/DetailInfo"
 
-const Info = ({show}) => {
+const Info = ({show ,removeFoto}) => {
   console.log(show)
   return (
     <>
@@ -14,7 +14,7 @@ const Info = ({show}) => {
       <div>
         {show.map((item)=> {
            
-          return  <DetailInfo item={item} />
+          return  <DetailInfo  key = {item.id} item={item}  removeFoto={removeFoto}/>
          
 
         })}
