@@ -11,4 +11,6 @@
 # Temel Seviyede başlayanlara faydam olması dileğimle...
 
 
-T
+# Uygulamanın sonucu aşağıdaki bağlantıyı tıklayarak görebilirsiniz.
+
+https://aydogdu-ali.github.io/picture-info/
