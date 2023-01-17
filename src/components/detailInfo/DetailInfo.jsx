@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 
 
 
-
+// gelen veri ve fonksiyonu karşıladım.
 const DetailInfo = ({item, removeFoto}) => {
   const [detail ,setDetail] = useState(false)
-  const { id, tags, likes, webformatURL,type, comments} = item
+  //gelen verinin içeriğini destructuring yöntemi ile açtım. DOM'da göstereceğim bilgileri alıyoruz. Size kalmış
+ const { id, tags, likes, webformatURL,type, comments} = item
 
   
  
@@ -13,6 +14,7 @@ const DetailInfo = ({item, removeFoto}) => {
     <div className="fotograf">
       <section key={id}>
         <img src={webformatURL} alt={type} />
+        {/*detay ile ilgili koşullu ifade ternary öperatörü kullanımı*/}
         <button className="btn" onClick={() => setDetail(!detail)}>
           {detail ? "Detay Gizle" : " Detayı Göster "}
         </button>
@@ -29,6 +31,7 @@ const DetailInfo = ({item, removeFoto}) => {
           ""
         )}
         <div className="btn-sil">
+          {/*silme fonksiyonu*/}
           <button className="btn-kaldır" onClick={()=>(removeFoto(id))}>Kaldır</button>
         </div>
       </section>
@@ -36,4 +39,4 @@ const DetailInfo = ({item, removeFoto}) => {
   );
 }
 
-export default DetailInfo;
+export default DetailInfo

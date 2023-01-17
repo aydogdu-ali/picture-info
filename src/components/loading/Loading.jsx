@@ -1,6 +1,7 @@
 import React from 'react'
 
 
+// Apı den veri gelirken kullanıcının verinin geldiğini gösteriri componenti tanımladım.
 const Loading = () => {
   return (
     <div>
