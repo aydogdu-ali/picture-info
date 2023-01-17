@@ -13,6 +13,7 @@
 
 #Uygulamanın sonucu aşağıdaki bağlantıyı tıklayarak görebilirsiniz.
 
+https://aydogdu-ali.github.io/picture-info/
 
 
 https://user-images.githubusercontent.com/108414013/212785824-3ef18523-f280-4d59-8386-87d573ddf6ae.mp4
